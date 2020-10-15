@@ -1,0 +1,84 @@
+.nav-bar-section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #333333;
+}
+
+body {
+  margin: 0;
+}
+
+.nav-bar {
+  max-width: 1000px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav-bar > li {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.75rem;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+}
+
+.nav-bar > li > a:link {
+  text-decoration: none;
+  color: rgb(211, 212, 213);
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.nav-bar > li > a:hover {
+  text-decoration: none;
+  color: white;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.nav-bar > li > a:visited {
+  text-decoration: none;
+  color: white;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.search-icon {
+  width: 36px;
+  padding-top: 3px;
+}
+
+.checkout-icon {
+  width: 16px;
+  padding-top: 3px;
+}
+
+.apple-icon {
+  padding-top: 3px;
+  width: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar li:not(:first-child):not(:last-child) {
+    display: none;
+  }
+  .nav-bar {
+    position: relative;
+  }
+  .nav-bar li:first-child {
+    position: absolute;
+    left: 50%;
+  }
+  .nav-bar li:last-child {
+    float: right;
+    margin-left: 95%;
+  }
+}
