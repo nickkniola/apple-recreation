@@ -3,6 +3,7 @@
   padding: 0;
   width: 100%;
   background-color: #333333;
+  height: 44px;
 }
 
 body {
@@ -15,13 +16,14 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding: 0;
+  height: 44px;
 }
 
 .nav-bar > li {
   display: inline-block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
   margin-left: 0.75rem;
   margin-right: 1rem;
   letter-spacing: 1px;
@@ -30,39 +32,38 @@ body {
 .nav-bar > li > a:link {
   text-decoration: none;
   color: rgb(211, 212, 213);
-  font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 13px;
   font-weight: 300;
 }
 
 .nav-bar > li > a:hover {
   text-decoration: none;
   color: white;
-  font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 13px;
   font-weight: 300;
 }
 
 .nav-bar > li > a:visited {
   text-decoration: none;
   color: white;
-  font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 13px;
   font-weight: 300;
 }
 
 .search-icon {
   width: 36px;
-  padding-top: 3px;
+
 }
 
 .checkout-icon {
-  width: 16px;
-  padding-top: 3px;
+  width: 17px;
+
 }
 
 .apple-icon {
-  padding-top: 3px;
   width: 16px;
 }
 
@@ -81,4 +82,120 @@ body {
     float: right;
     margin-left: 95%;
   }
+}
+
+.covid-bar {
+  background-color: #1871E3;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.1rem 0;
+}
+
+.covid-text {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.covid-bar a {
+  color: white;
+}
+
+.covid-bar a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.covid-bar a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.shop-online-bar {
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.1rem 0;
+}
+
+.shop-online-text {
+  color: #252527;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.shop-online-text a {
+  color: #1871E3;
+  text-decoration: none;
+}
+
+.shop-online-text a:link {
+  color: #1871E3;
+  text-decoration: none;
+}
+.shop-online-text a:hover {
+  color: #1871E3;
+  text-decoration: underline;
+}
+
+.top-section {
+  background-image: url("images/top-section-image.jpg");
+  height: 881px;
+  background-position: center top;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.top-section-content {
+  position: absolute;
+  bottom: 3rem;
+  text-align: center;
+  max-width: 29rem;
+  margin: auto;
+  flex-basis: 100%;
+  font-family: "Helvetica Neue", Helvetica;
+  color: #FCD65F;
+}
+
+.top-section h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 52pt;
+  background: -webkit-linear-gradient(#F36B0D, #FCD65F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-section h3 {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.watch-event-button {
+  border: 2px solid#FCD65F;
+  background-color: transparent;
+  color: #FCD65F;
+  padding: 18px 28px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 185px;
+  border-width: 1px;
+  width: 185px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
